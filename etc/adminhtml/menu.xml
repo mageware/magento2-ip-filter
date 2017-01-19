@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MageWare_IpFilter::ipfilter" title="Ip Filter" translate="title" module="MageWare_IpFilter" sortOrder="20" parent="MageWare_Common::mageware" resource="MageWare_IpFilter::config" />
+        <add id="MageWare_IpFilter::config" title="Configuration" translate="title" module="MageWare_IpFilter" sortOrder="10" parent="MageWare_IpFilter::ipfilter" action="adminhtml/system_config/edit/section/mageware_ipfilter" resource="MageWare_IpFilter::config" />
+        <add id="MageWare_IpFilter::rule" title="Rules" translate="title" module="MageWare_IpFilter" sortOrder="20" parent="MageWare_IpFilter::ipfilter" action="ipfilter/rule/" resource="MageWare_IpFilter::rule" />
+    </menu>
+</config>
