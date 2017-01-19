@@ -8,6 +8,7 @@
     <module name="MageWare_IpFilter" setup_version="1.0.0">
         <sequence>
             <module name="Magento_Backend"/>
+            <module name="Magento_Store"/>
             <module name="MageWare_Common"/>
         </sequence>
     </module>
