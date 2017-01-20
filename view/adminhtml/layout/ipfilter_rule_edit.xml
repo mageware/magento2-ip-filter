@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * See LICENSE.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="MageWare\IpFilter\Block\Adminhtml\Rule\Edit" name="ipfilter_rule_edit"/>
+        </referenceContainer>
+        <referenceContainer name="left">
+            <block class="MageWare\IpFilter\Block\Adminhtml\Rule\Edit\Tabs" name="ipfilter_rule_edit_tabs">
+                <block class="MageWare\IpFilter\Block\Adminhtml\Rule\Edit\Tab\Details" name="ipfilter_rule_edit_tab_details"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">details_section</argument>
+                    <argument name="block" xsi:type="string">ipfilter_rule_edit_tab_details</argument>
+                </action>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

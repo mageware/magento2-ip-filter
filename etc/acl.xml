@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="MageWare_IpFilter::config" title="Ip Filter Section" translate="title" sortOrder="40" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+            <resource id="Magento_Backend::admin">
+                <resource id="MageWare_Common::mageware">
+                    <resource id="MageWare_IpFilter::ipfilter" title="Ip Filter" translate="title" sortOrder="20">
+                        <resource id="MageWare_IpFilter::rule" title="Rules" translate="title" sortOrder="10"/>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
